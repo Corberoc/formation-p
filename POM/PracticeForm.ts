@@ -1,6 +1,6 @@
 import { Locator, Page } from '@playwright/test';
 import {faker} from '@faker-js/faker';
-import Homme from '../datasets/category.json';
+import testData from '../datasets/category.json';
 
 export class PracticeForm {
     firstname : Locator;
@@ -26,15 +26,14 @@ export class PracticeForm {
     }
 
   async fillform() {
-    await this.firstname.fill(faker.person.firstName());
+    await this.firstname.fill(testData.Homme.FIRSTNAME);
     //process.env.FIRSTNAME!
-    //Homme[0].Homme!.FIRSTNAME);
+    //faker.person.firstName()
     await this.lastname.fill(faker.person.lastName());
     await this.userEmail.fill(faker.internet.email());
-    // process.env.EMAIL!);
+    // process.env.EMAIL!
     await this.gender.click();
-    await this.mobile.fill(//faker.phone.number()
-      Homme[0].Homme!.MOBILE);
+    await this.mobile.fill(faker.phone.number());
     await this.checkbox.check();
     await this.currentAddress.fill(faker.location.streetAddress());
     await this.submit.click();

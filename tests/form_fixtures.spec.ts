@@ -1,8 +1,7 @@
 import { test,expect } from '../POM/Fixtures';
-import Homme from '../datasets/category.json';
 
 test.beforeEach(async ({ page }) => {
-  await page.goto(process.env.URL!)
+  await page.goto(process.env.URL!);
 })
 
 test('formulaire POM Fixtures',{
