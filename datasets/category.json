@@ -1,0 +1,22 @@
+[
+  {
+    "Homme": {
+        "FIRSTNAME": "Galdric",
+        "LASTNAME": "TINGAUD",
+        "EMAIL": "galdric.tingaud@isen.com",
+        "MOBILE": "0606060606",
+        "ADDRESS": "1 rue de la paix, 75000 Paris",
+        "GENDER": "Male"
+    }
+  },
+  {
+    "Femme": {
+        "FIRSTNAME": "Camille",
+        "LASTNAME": "DUPONT",
+        "EMAIL": "camille.dupont@isen.com",
+        "MOBILE": "0707070707",
+        "ADDRESS": "12 avenue Victor Hugo, 69000 Lyon",
+        "GENDER": "Female"
+    }
+  }
+]
